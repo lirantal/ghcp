@@ -87,3 +87,6 @@ typings/
 
 # Snyk
 .dccache
+
+# APM dependencies
+apm_modules/
