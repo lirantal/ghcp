@@ -25,15 +25,15 @@ For these forms, `ref` is inferred from the segment after `blob` or `tree`.
 
 ## Examples
 
-| Spec                            | Meaning                                  |
-| ------------------------------- | ---------------------------------------- |
-| `acme/widget`                   | Entire default branch at repository root |
-| `acme/widget/.github/workflows` | That directory tree                      |
-| `acme/widget/LICENSE`           | Single file                              |
-| `acme/widget#v2.0.0`            | Root at tag `v2.0.0`                     |
-| `acme/widget/pkg/cli#main`      | Directory `pkg/cli` on branch `main`     |
-| `acme/widget/blob/main/docs`    | `docs` directory on branch `main`        |
-| `https://github.com/acme/widget/tree/main` | Repository root on branch `main` |
+| Spec                                         | Meaning                                  |
+| -------------------------------------------- | ---------------------------------------- |
+| `acme/widget`                                | Entire default branch at repository root |
+| `acme/widget/.github/workflows`              | That directory tree                      |
+| `acme/widget/LICENSE`                        | Single file                              |
+| `acme/widget#v2.0.0`                         | Root at tag `v2.0.0`                     |
+| `acme/widget/pkg/cli#main`                   | Directory `pkg/cli` on branch `main`     |
+| `acme/widget/blob/main/docs`                 | `docs` directory on branch `main`        |
+| `https://github.com/acme/widget/tree/main`   | Repository root on branch `main`         |
 
 ## `--ref` vs `#ref`
 

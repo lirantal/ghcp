@@ -11,7 +11,17 @@ export interface ParsedSourceSpec {
 }
 
 function normalizeGithubPrefix (value: string): string {
-  return value.replace(/^(?:https?:\/\/)?github\.com\//i, '')
+  const lowered = value.toLowerCase()
+  if (lowered.startsWith('https://github.com/')) {
+    return value.slice('https://github.com/'.length)
+  }
+  if (lowered.startsWith('http://github.com/')) {
+    return value.slice('http://github.com/'.length)
+  }
+  if (lowered.startsWith('github.com/')) {
+    return value.slice('github.com/'.length)
+  }
+  return value
 }
 
 function isValidGithubName (name: string, maxLen: number): boolean {
